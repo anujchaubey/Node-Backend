@@ -1,0 +1,13 @@
+const querydetails = `SELECT * FROM users WHERE username=? And status=?`;
+        let usernames=[username]
+        let status=[status]
+
+
+        let insertquery=`INSERT INTO login SET ?`;;
+    let insertqueryfields={
+        name:data.name,
+        username:data.username,
+        password:hashpwd,
+      }
+    let dataadminbackto = await dbQueryFunctionparamerters(insertquery,insertqueryfields);
+    return dataadminbackto;
